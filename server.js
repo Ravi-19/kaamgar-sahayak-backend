@@ -19,10 +19,7 @@ app.server = http.createServer(app);
 const { errorHandler } = middlewares.errorHandler;
 
 // middleware
-app.use(cors({ origin:['http://localhost:3000/',  'https://kaamgar-shayak-frontend.vercel.app/',
-                        'https://kaamgar-shayak-frontend.onrender.com/',
-                    ]  
-   }));
+app.use(cors());
 
 
 app.use(
