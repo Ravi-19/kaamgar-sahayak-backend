@@ -67,12 +67,12 @@ export default {
     }
 
     // check if password is 8 character long and have at least one number and one alphabet and one special character and one uppercase
-    if (!req.body.user.password.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$\-!%*?&])[A-Za-z\d@\-$!%*?&]{8}$/)) {
-      return res.status(400).json({
-        type: "password",
-        msg: "Password must be at lease 8 characters, one uppercase, one digit, one alphabet and one special character"
-      });
-    }
+    // if (!req.body.user.password.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$\-!%*?&])[A-Za-z\d@\-$!%*?&]{8}$/)) {
+    //   return res.status(400).json({
+    //     type: "password",
+    //     msg: "Password must be at lease 8 characters, one uppercase, one digit, one alphabet and one special character"
+    //   });
+    // }
     let user = new User();
     Object.assign(user, req.body.user);
     if (user.role === "LABOR") Object.assign(user, { rating: 90, startingWage: 1000 });
