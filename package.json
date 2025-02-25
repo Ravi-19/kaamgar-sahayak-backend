@@ -1,5 +1,5 @@
 {
-  "name": "mazdoor_backend",
+  "name": "kaamgar-sahayak-backend",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -14,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shahbazhassan42000/mazdoor.git"
+    "url": "https://github.com/Ravi-19/kaamgar-sahayak-backend"
   },
-  "author": "shahbazhassan42000@gmail.com",
-  "homepage": "https://github.com/shahbazhassan42000/mazdoor.git#readme",
+  "author": "ravishekhawatofficial@gmail.com",
+  "homepage": "https://github.com/Ravi-19/kaamgar-sahayak-backend#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
     "concurrently": "^7.3.0",
